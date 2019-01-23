@@ -30,6 +30,9 @@ public class RobotColorChooser {
 			} else if (response.equalsIgnoreCase("green")) {
 				meme.setPenColor(77, 255, 0);
 			}
+			else if (response.equalsIgnoreCase("random")) {
+				meme.setRandomPenColor();
+			}
 			// 6. If the user doesn’t enter anything, choose a random color
 			else if (response.equalsIgnoreCase("")) {
 				meme.setRandomPenColor();
@@ -40,13 +43,14 @@ public class RobotColorChooser {
 			// 4. Set the pen width to 10
 			meme.setPenWidth(10);
 			// 2. Make the robot draw a shape (this will take more than one line of code)
-			meme.move(50);
+			meme.penDown();
+			meme.move(200);
 			meme.turn(90);
-			meme.move(50);
+			meme.move(200);
 			meme.turn(90);
-			meme.move(50);
+			meme.move(200);
 			meme.turn(90);
-			meme.move(50);
+			meme.move(200);
 			meme.turn(90);
 		}
 	}

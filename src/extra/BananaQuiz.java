@@ -20,10 +20,12 @@ public class BananaQuiz
 		}
 		//3. if they say yes
 		else if (answer.equalsIgnoreCase("yes")) {
-			
+			String bananna = JOptionPane.showInputDialog("What is your favorite hobby?");
+			JOptionPane.showMessageDialog(null, "Everything is better with bannanas!");
 		//	ask them what is their favorite hobby
 		//	show a pop up that says "<your hobby> is much better with bananas!"
 		}
+		
 		//4. OPTIONAL: if they say something other than “yes�? or “no�?
 		//	show a pop up that says “You are bananas!�?
 	
