@@ -27,7 +27,34 @@ import org.omg.Messaging.SyncScopeHelper;
 **/
 
 public class FizzBuzz {
+public static void main(String[] args) {
+//modulo= binary operator 4%2 gives remainder of division 5 divided by 2= R1 5%2=1
+	for(int i=1; i<21; i++) {
+//int number = 20;
+		
+		//System.out.println(i);
+		 if (i % 3 ==0 && i % 5 ==0) {
+			System.out.println("fizzbuzz");
+		}
+		else if(i % 3 == 0) {
+	System.out.println("fizz");
+}
+else if(i % 5 == 0) {
+	System.out.println("buzz");
+}
+else if (i % 3 ==0 && i % 5 ==0) {
+	System.out.println("fizzbuzz");
+}
+else {
+	System.out.println(i);
+}
+}
+}
+}
+
+
+
 	
 
-}
+
 
